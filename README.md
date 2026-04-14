@@ -60,7 +60,7 @@ set gender=coalesce(gender,'unknown') ,
 	cogs = coalesce(cogs,0),
 	total_sale = coalesce(total_sale,0);
 ```
-**duplicate detection**
+- **duplicate detection**
 ```sql
 select 
 transactions_id ,sale_date, sale_time, customer_id,gender,age,category,quantity,price_per_unit ,cogs ,total_sale ,count(*) as cnt
